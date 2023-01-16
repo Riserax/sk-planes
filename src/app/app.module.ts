@@ -8,17 +8,21 @@ import { MaterialModule } from './material/material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { CoreModule } from './core/core.module';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FlightsModule } from './flights/flights.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CoreModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
+    AppRoutingModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    CoreModule,
+    FlightsModule,
     MaterialModule
   ],
   providers: [],

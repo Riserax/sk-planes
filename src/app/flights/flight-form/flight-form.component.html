@@ -1,0 +1,51 @@
+<form [formGroup]="form">
+  <div class="row">
+    <div class="col-sm-8">
+      <mat-form-field>
+        <input matInput formControlName="code" placeholder="Code">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <mat-form-field>
+        <input matInput formControlName="origin" placeholder="Origin">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+      <mat-form-field>
+        <input matInput formControlName="destination" placeholder="Destination">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <mat-form-field>
+        <input matInput formControlName="departureTime" placeholder="Departure time">
+      </mat-form-field>
+    </div>
+    <div class="col-sm-4">
+      <mat-form-field>
+        <input matInput formControlName="returnTime" placeholder="Return time">
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <mat-form-field>
+        <textarea matInput formControlName="additionalInformation" placeholder="Additional information"></textarea>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <mat-checkbox formControlName="withSKPlanesDiscount" >With SK Discount</mat-checkbox>
+    </div>
+  </div>
+</form>
+
+<pre>{{form.value | json}}</pre>
