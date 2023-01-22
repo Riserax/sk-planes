@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col">
+        <h3>
+            FLIGHT DETAILS
+            <mat-icon class="float-end" (click)="closeDialog()">close</mat-icon>
+        </h3>
+        <p class="label">Code: {{flight.code}}</p>
+        <p class="label">Crew:</p>
+        <ul>
+            <li *ngFor="let mamber of flight.crew">
+                {{mamber.name}}
+            </li>
+        </ul>
+        <button mat-raised-button color="primary" class="float-end">EDIT FLIGHT</button>
+    </div>
+</div>

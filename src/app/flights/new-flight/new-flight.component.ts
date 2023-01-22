@@ -12,10 +12,9 @@ import { FlightFormComponent } from '../flight-form/flight-form.component';
 export class NewFlightComponent implements OnInit {
   @ViewChild('flightForm') flightForm?: FlightFormComponent;
 
-  constructor(
-    private dialogRef: MatDialogRef<NewFlightComponent>,
-    private flightsService: FlightsService,
-    private toast: MatSnackBar) {
+  constructor(private dialogRef: MatDialogRef<NewFlightComponent>,
+              private flightsService: FlightsService,
+              private toast: MatSnackBar) {
   }
 
   ngOnInit(): void {
