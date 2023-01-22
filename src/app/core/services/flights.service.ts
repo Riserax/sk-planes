@@ -26,4 +26,8 @@ export class FlightsService {
       key: flight.key
     }
   }
+
+  addFlight(flight: Flight) {
+    return this.db.list<Flight>(this.API_URL).push(flight);
+  }
 }

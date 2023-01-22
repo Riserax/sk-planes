@@ -4,6 +4,7 @@
 
 .card-container {
   padding: 10px;
+  margin-bottom: 20px;
   position: relative;
 }
 
@@ -38,7 +39,7 @@
   color: grey;
 }
 
-.destination {
+.origin, .destination {
   font-size: 26px;
   font-weight: bold;
   color: deeppink;

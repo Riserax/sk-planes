@@ -51,7 +51,6 @@
     </div>
   </div>
 
-  <!-- FIXME Error: No value accessor for form control with path: 'crew -> 0 -> job' -->
   <div formArrayName="crew" class="crew-container shadow" *ngFor="let crewMember of crew.controls; index as index">
     <div class="row crew-header">
       <div class="col">
@@ -60,7 +59,8 @@
       </div>
     </div>
 
-    <div class="row" [formGroupName]="index">
+    <!-- FIXME Error: No value accessor for form control with path: 'crew -> 0 -> job' -->
+    <!-- <div class="row" [formGroupName]="index">
       <div class="col-sm-5">
         <mat-form-field>
           <input mat-input formControlName="name" placeholder="Name"/>
@@ -73,7 +73,7 @@
           </mat-select>
         </mat-form-field>
       </div>
-    </div>
+    </div> -->
 
     <div class="row">
       <div class="col">
