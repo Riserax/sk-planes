@@ -1,6 +1,6 @@
 <form [formGroup]="form">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-sm-4">
       <mat-form-field>
         <input matInput formControlName="code" placeholder="Code" #codeInput>
         <mat-error *ngIf="form.get('code')?.hasError('required')">Code is required</mat-error>
@@ -82,5 +82,3 @@
     </div>
   </div>
 </form>
-
-<pre>{{form.value | json}}</pre>

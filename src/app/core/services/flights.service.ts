@@ -35,6 +35,14 @@ export class FlightsService {
     return this.db.object<Flight>(`${this.API_URL}/${key}`)
       .snapshotChanges()
       .pipe(
-        map(flight => FlightsService.assignKey(flight)))
+        map(flight => FlightsService.assignKey(flight)));
+  }
+
+  editFlight(key: string, flight: Flight): Promise<void> {
+    return this.db.object<Flight>(`${this.API_URL}/${key}`).update(flight);
+  }
+
+  removeFlight(key: string): Promise<void> {
+    return this.db.object<Flight>(`${this.API_URL}/${key}`).remove();
   }
 }
