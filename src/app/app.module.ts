@@ -10,6 +10,7 @@ import { CoreModule } from './core/core.module';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FlightsModule } from './flights/flights.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAuthModule,
     AngularFireDatabaseModule,
     AppRoutingModule,
     BrowserModule,

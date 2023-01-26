@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MaterialModule } from '../material/material.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MaterialModule } from '../material/material.module';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     RouterModule,
     MaterialModule,
     MatToolbarModule
