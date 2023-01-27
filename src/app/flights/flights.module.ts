@@ -8,6 +8,7 @@ import { FlightFormComponent } from './flight-form/flight-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DetailsComponent } from './details/details.component';
 import { EditFlightComponent } from './edit-flight/edit-flight.component';
+import { FlightsRoutingModule } from './flights-routing.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { EditFlightComponent } from './edit-flight/edit-flight.component';
     CommonModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FlightsRoutingModule
   ]
 })
 export class FlightsModule { }

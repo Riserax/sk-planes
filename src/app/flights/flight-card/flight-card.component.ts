@@ -1,14 +1,13 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { Flight } from '../../models/flight.model';
 
 @Component({
   selector: 'app-flight-card',
   templateUrl: './flight-card.component.html',
-  styleUrls: ['./flight-card.component.scss']
+  styleUrls: ['./flight-card.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class FlightCardComponent implements OnInit {
+export class FlightCardComponent {
   @Input() flight!: Flight;
-
-  ngOnInit(): void {
-  }
+  math = Math;
 }
