@@ -9,5 +9,4 @@ import { Flight } from '../../models/flight.model';
 })
 export class FlightCardComponent {
   @Input() flight!: Flight;
-  math = Math;
 }
